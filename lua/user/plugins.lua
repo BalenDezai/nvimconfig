@@ -61,6 +61,8 @@ return packer.startup(function(use)
   use 'nvim-telescope/telescope-media-files.nvim'
 
   use "rebelot/kanagawa.nvim" 
+
+  use "windwp/nvim-autopairs"
   
    -- Treesitter
   use {
@@ -99,7 +101,6 @@ return packer.startup(function(use)
           null_ls.builtins.diagnostics.clang_check,
           null_ls.builtins.diagnostics.cppcheck,
           null_ls.builtins.diagnostics.cpplint,
-          null_ls.builtins.diagnostics.editorconfig_checker,
           null_ls.builtins.diagnostics.flake8,
           null_ls.builtins.diagnostics.jsonlint,
           null_ls.builtins.formatting.clang_format,
